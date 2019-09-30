@@ -1,45 +1,191 @@
-  <!doctype html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="app.css">
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    
-    <div class="jumbotron text-center">
-      <h1>My First Bootstrap Page</h1>
-      <p>Resize this responsive page to see the effect!</p>
-    </div>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="app.css">
+  <title>Hello, world!</title>
+</head>
 
-    <div class="container text-center">
+<body>
+  <!-- Headermodul-->
+  <header class="header">
+    <div class="container">
       <div class="row">
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-          <h3>Column 1</h3>
-          <p>Lorem ipsum dolor..</p>
-          <img class="img-fluid" src="https://placekitten.com/640/360">
+        <div class="col">
+          <svg class="facebook-icon-white" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+            viewBox="0 0 24 24">
+            <path
+              d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 10h-2v2h2v6h3v-6h1.82l.18-2h-2v-.833c0-.478.096-.667.558-.667h1.442v-2.5h-2.404c-1.798 0-2.596.792-2.596 2.308v1.692z" />
+            </svg>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-          <h3>Column 2</h3>
-          <p>Lorem ipsum dolor..</p>
-          <img class="img-fluid" src="https://placekitten.com/640/360">
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xl-2">
-          <h3>Column 3</h3>
-          <p>Lorem ipsum dolor..</p>
-          <img class="img-fluid" src="https://placekitten.com/640/360">
+        <div class="col">
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" href="who.html">Who</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">How</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Why</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-  </body>
+  </header>
+
+
+  <!-- Jumbotron-->
+  <div class="jumbotron jumbotron-fluid text-center jumbotron-main py-0 ">
+    <img src="assets/network-black.jpg" class="jumbotron-background-image">
+    <div class="jumbotron-body">
+      <h1 class="logo-animation">
+        <span data-toggle="tooltip" data-placement="bottom"
+          title="Polis (die; von altgriechisch πόλις pólis ‚Stadt‘, ‚Staat‘, ursprünglich auch: ‚Burg‘; Pl. Poleis, zu πόλεις póleis) ">Pol</span><span
+          data-toggle="tooltip" data-placement="bottom"
+          title="Kaleidoskop (καλός kalós „schön“, εἴδος eidos „Form, Gestalt“ und σκοπεῖν skopéin „schauen, sehen, betrachten)“.">eidoskop</span>
+      </h1>
+      <p>Some place for a subheadline!</p>
+    </div>
+    <a href="#main-content" class="btn btn-primary jumbotron-btn">click me</a>
+    <svg class="facebook-icon-white" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
+      <path
+        d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 10h-2v2h2v6h3v-6h1.82l.18-2h-2v-.833c0-.478.096-.667.558-.667h1.442v-2.5h-2.404c-1.798 0-2.596.792-2.596 2.308v1.692z" />
+      </svg>
+  </div>
+
+
+  <!--Main Content-->
+  <main id="main-content">
+    <div class="container">
+      <!--Card WER-->
+      <div class="row">
+        <div class="col-12">
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-6">
+                <img src="assets/kuppel.jpg" class="card-img" alt="...">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h2 class="card-title">WER</h2>
+                  <p class="card-text">Es gibt 705 Bundestagsabgeordnete. Meet them.Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+                  <a href="who.html" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card WAS -->
+      <div class="row">
+        <div class="col-12">
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-6 text-right order-2 order-md-1">
+                <div class="card-body">
+                  <h2 class="card-title">Ausschüsse des Bundestags</h2>
+                  <p class="card-text">Bundestagsabgeordnete haben viele Aufgaben in verschiedenen Ausschüssen. Welche
+                    Ausschüsse es gibt, erfährst du hier.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="col-md-6 order-1 order-md-2">
+                <img src="assets/buta-roof.jpg" class="card-img" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Card Warum -->
+      <div class="row">
+        <div class="col-12">
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-6">
+                <img src="assets/buta-detail.jpg" class="card-img" alt="...">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h2 class="card-title">Was soll das hier?</h2>
+                  <p class="card-text"> Hier erfährst du, warum wir das machen.Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active" href="who.html">Who</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">How</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Why</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+
+
+
+  <!-- <div class="container text-center">
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-4 col-xl-2">
+        <h3>Column 1</h3>
+        <p>Lorem ipsum dolor..</p>
+        <img class="img-fluid" src="https://placekitten.com/640/360">
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-xl-2">
+        <h3>Column 2</h3>
+        <p>Lorem ipsum dolor..</p>
+        <img class="img-fluid" src="https://placekitten.com/640/360">
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-xl-2">
+        <h3>Column 3</h3>
+        <p>Lorem ipsum dolor..</p>
+        <img class="img-fluid" src="https://placekitten.com/640/360">
+      </div>
+    </div>
+  </div> -->
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
 </html>

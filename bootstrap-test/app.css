@@ -1,3 +1,114 @@
-.jumbotron {
-  color: lightpink;
+/*
+Schriftgröße Default 16 px; 
+Zeilenabstand: 1.5em = 24px;
+Abstände: 6, 12, 18, 24, usw;
+Farben: schwarz, weiß
+*/
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap');
+
+
+
+html,body {
+  margin:0;
+  padding:0;
+  font-family: 'Inconsolata', monospace;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+.header-regular {
+  background-color: #2F4858;
+  color: white;
+}
+
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+a {
+  color: #ffffff;
+}
+
+a:hover {
+  color: #FF6900;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: grey;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #2F4858;
+  border: none;
+}
+footer {
+    background-color:black;
+    opacity: 0.75;
+  }
+ 
+ .logo-animation span {
+  transition: all 0.5s ease-in-out
+ } 
+
+.logo-animation span:hover {
+  cursor: pointer;
+  color: #FF6900;
+}
+
+.jumbotron-background-image {
+  width:  100%;
+  height:100%;
+  object-fit: cover;
+}
+.jumbotron-main {
+  color: #ffffff;
+  height: 100vh;
+  /* display:flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+.jumbotron-body {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.jumbotron-btn {
+  position: absolute;
+  z-index: 4;
+  left:50%;
+  bottom: 0;
+  transform: translate(-50%, -50%)
+}
+
+.facebook-icon-white {
+  position: absolute;
+  /* left: 85%;
+  bottom: 10px; */
+  margin-top: 10px;
+}
+.facebook-icon-white path {
+  fill: white;
+}
+
+#carouselExampleControls {
+  margin-top: 50px;
+  margin-bottom: 50px; 
+}
+
+#main-content {
+  padding-top: 50px;
 }
