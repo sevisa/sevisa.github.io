@@ -19,7 +19,7 @@ html,body {
   letter-spacing: 0,5px;
   color: #282524;
 }
-b{    /*geeeeeeht nicht :( */
+b {    /*geeeeeeht nicht :( */
   color: #FF8B67;
 }
 /* .header-regular {
@@ -38,6 +38,19 @@ b{    /*geeeeeeht nicht :( */
   position: absolute;
   left: 90%;
   top: 85%;
+}
+
+.scroll {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -20%)
+}
+
+.imprint{
+  position: absolute;
+  left: 50px;
+  top: 73%;
 }
 
 .wrapper {
@@ -152,15 +165,17 @@ footer {
 
 .logo-animation span:hover {
   cursor: pointer;
-  color: #FF6900;
+  color: #FF8B67;
 }
 
 .jumbotron-main {
   background-color: #69C8A3;
   height: 100vh;
+  /* background-image: linear-gradient(to right top, #69c8a3 50%, #69d4aa, #68dfb1, #67ebb7, #66f7be); */
   /* display:flex;
   flex-direction: column;
   justify-content: center; */
+  background-image: linear-gradient(to right top, #69c8a3 50%, #7bd6b2, #8ee3c2, #a0f1d1, #b2ffe1);
 }
 .jumbotron-body {
   position: relative;
@@ -181,9 +196,9 @@ footer {
   margin-top: auto;
 } */
 
-#main-content {
+/* #main-content {
   padding-top: 50px;
-}
+} */
 
 /* .carousel {
   position: relative;
@@ -215,4 +230,9 @@ footer {
 .card {
   width: 295px;
   height: 295px;
+}
+
+.vl {
+  border-left: 3px solid #FF8B67;
+  height: 80px;
 }
