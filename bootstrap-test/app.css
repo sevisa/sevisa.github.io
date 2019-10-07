@@ -7,23 +7,71 @@ Farben: schwarz, weiß
 
 
 
-@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap');
 
 
 html,body {
   margin:0;
   padding:0;
-  font-family: 'Inconsolata', monospace;
-  font-size: 16px;
-  line-height: 1.5em;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: 0,5px;
+  color: #282524;
 }
-
-.header-regular {
+b{    /*geeeeeeht nicht :( */
+  color: #FF8B67;
+}
+/* .header-regular {
   background-color: #2F4858;
   color: white;
   margin-bottom: 50px;
+} */
+
+.logo {
+  position: absolute;
+  top: 50px;
+  left: 50px;
 }
+
+.social {
+  position: absolute;
+  left: 90%;
+  top: 85%;
+}
+
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1140px;
+}
+.line {
+  position: absolute;
+  height: 100vh;
+  background-color: #282524;
+  opacity: 0.2;
+  width: 1px;
+  top: 0;
+  z-index: 3;
+}
+
+.line-one {
+  left: 0;
+}
+
+.line-two {
+  left: 25%;
+}
+.line-three {
+  left: 50%;
+}
+.line-four {
+  left: 75%;
+}
+.line-five {
+  left: 100%;
+}
+
 
 .header {
   position: absolute;
@@ -40,27 +88,66 @@ a:hover {
   color: #FF6900;
 }
 
-h1 {
-  font-size: 60px;
+.huge {
+  font-size: 144px;
   font-weight: bold;
+  line-height: 173px;
+  letter-spacing: 0,5px;
 }
 
-.btn-primary {
-  background-color: grey;
-  border: none;
+h1 {
+  font-size: 87px;
+  font-weight: bold;
+  line-height: 104px;
+  letter-spacing: 3px;
 }
 
-.btn-primary:hover {
-  background-color: #2F4858;
-  border: none;
+h2 {
+  font-size: 52px;
+  font-weight: bold;
+  line-height: 104px;
+  letter-spacing: 2px;
+  
 }
+.button-primary {
+  background-color: #FF8B67;
+  border: 1px solid transparent; /*border wird nicht überschrieben, bleibt bei default blau: hab bootstrapklasse ersetzt*/
+  color: white;
+  border-radius: 20px;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+.button-primary:hover {   /*transition noch weiß dazwischen? */
+  background-color: transparent;
+  border: 1px solid #282524;
+  color: #282524;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid #282524;
+  color: #282524;
+  border-radius: 20px;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+.btn-secondary:hover {
+  background-color: #FF8B67;
+  border: 1px solid transparent;
+  color: white;
+}
+
 footer {
-    background-color:black;
-    opacity: 0.75;
+    background-color:#282524;
+  
   }
  
  .logo-animation span {
-  transition: all 0.5s ease-in-out
+  transition: all 0.5s ease-in-out;
+  color: #ffffff;
+
  } 
 
 .logo-animation span:hover {
@@ -68,20 +155,15 @@ footer {
   color: #FF6900;
 }
 
-.jumbotron-background-image {
-  width:  100%;
-  height:100%;
-  object-fit: cover;
-}
 .jumbotron-main {
-  color: #ffffff;
+  background-color: #69C8A3;
   height: 100vh;
   /* display:flex;
   flex-direction: column;
   justify-content: center; */
 }
 .jumbotron-body {
-  position: absolute;
+  position: relative;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%)
@@ -95,16 +177,6 @@ footer {
   transform: translate(-50%, -50%)
 }
 
-.facebook-icon-white {
-  position: absolute;
-  /* left: 85%;
-  bottom: 10px; */
-  margin-top: 10px;
-}
-.facebook-icon-white path {
-  fill: white;
-}
-
 /* #carouselExampleControls {
   margin-top: auto;
 } */
@@ -116,3 +188,31 @@ footer {
 /* .carousel {
   position: relative;
 } */
+
+.project-box {
+  background-color: #F4F3F3;
+}
+
+.numbers-box {
+  background-color: white;
+}
+
+.countdown-box {
+  background-color: #282524;
+  color: white;
+  text-align: center;
+  vertical-align: center;  
+}
+
+#countdown {
+  color: white;
+}
+
+.facts-box {
+  background-color: white;
+}
+
+.card {
+  width: 295px;
+  height: 295px;
+}
