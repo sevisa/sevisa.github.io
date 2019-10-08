@@ -123,21 +123,32 @@
 
     <!--Countdown-->
     <div class="jumbotron jumbotron-fluid countdown-box">
-      <div class="container text-left">
+      <div class="container text-center">
         <div class="row">
-          <div class="col-3 ">
+          <div class="col-3">
             <h3>Jahre</h3>
+            <p id="countdown-years" class="huge vl"></p>
           </div>
           <div class="col-3">
-            <h3>Tage</h3>
+            <div class="countdown-element">
+              <div class="vl-absolut"></div>
+              <h3>Tage</h3>
+              <p id="countdown-days" class="huge"></p>
+            </div>
           </div>
           <div class="col-3">
             <h3>Stunden</h3>
+            <p id="countdown-hours" class="huge"></p>
           </div>
           <div class="col-3">
             <h3>Minuten</h3>
+            <p id="countdown-minutes" class="huge"></p>
           </div>
-          <p id="countdown" class="huge"></p>
+          <!-- <p id="countdown-years" class="huge"></p> -->
+          <!-- <p id="countdown-days" class="huge"></p> -->
+          <!-- <p id="countdown-hours" class="huge"></p>
+          <p id="countdown-minutes" class="huge"></p> -->
+
         </div>
       </div>
       <h2 class="countdown-box">Bis zur nächsten <b>Bundestagswahl</b></h2>
@@ -338,7 +349,7 @@
 
     </div>
 
-  
+
   </main>
 
   <footer>

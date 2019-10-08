@@ -20,16 +20,27 @@ var x = setInterval(function() {
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 
-  // Display the result in the element with id="demo"
-  document.getElementById("countdown").innerHTML = years + "y " + days + "d " + hours + "h "
-  + minutes + "m " ;
+  // Display the result in the element with id="countdown-years"
+  document.getElementById("countdown-years").innerHTML = years + " " ;
+  document.getElementById("countdown-days").innerHTML = days + " " ;
+  document.getElementById("countdown-hours").innerHTML = hours + " " ;
+  document.getElementById("countdown-minutes").innerHTML = minutes + " " ;
+
 
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = "Time to vote!";
+    document.getElementById("countdown-years").innerHTML = "Time to vote!";
   }
 }, 1000);
+
+
+  
+ 
+
+
+
+
 
 // $('.carousel.carousel-multi-item.v-2 .carousel-item').each(function(){
 //   var next = $(this).next();

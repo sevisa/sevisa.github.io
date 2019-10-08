@@ -36,21 +36,21 @@ b {    /*geeeeeeht nicht :( */
 
 .social {
   position: absolute;
-  left: 90%;
-  top: 85%;
+  right: 50px;
+  bottom: 50px;
 }
 
 .scroll {
   position: absolute;
-  top: 80%;
+  bottom: 50px;
   left: 50%;
-  transform: translate(-50%, -20%)
+  transform: translate(-50%, 0)
 }
 
 .imprint{
   position: absolute;
   left: 50px;
-  top: 73%;
+  bottom: 50px;
 }
 
 .wrapper {
@@ -219,7 +219,19 @@ footer {
   vertical-align: center;  
 }
 
-#countdown {
+#countdown-years {
+  color: white;
+}
+
+#countdown-days {
+  color: white;
+}
+
+#countdown-hours {
+  color: white;
+}
+
+#countdown-minutes {
   color: white;
 }
 
@@ -233,6 +245,17 @@ footer {
 }
 
 .vl {
-  border-left: 3px solid #FF8B67;
+  border-right: 3px solid #FF8B67;
+}
+
+.vl-absolut {
+  position: absolute;
+  border-right: 4px solid #FF8B67;
   height: 80px;
+  top: 90px;
+  right: -17px;
+}
+
+.countdown-element {
+  position: relative;
 }
